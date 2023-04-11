@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+// s = regex_replace(s, regex("zero"), "0");
 
 int solution(string s) {
     int answer = 0;
