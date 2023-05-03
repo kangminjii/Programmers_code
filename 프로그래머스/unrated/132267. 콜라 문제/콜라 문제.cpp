@@ -8,7 +8,6 @@ int solution(int a, int b, int n) {
     
     int filled, repeatBottle, others = 0;
     
-    filled = n;
     answer += (n / a) * b;
     
     filled = (n / a) * b;
