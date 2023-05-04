@@ -6,16 +6,12 @@ using namespace std;
 string solution(vector<int> food) {
     string answer = "";
     
-    for(int i = 1; i < food.size(); i++)
-    {
-        if((food[i] % 2) != 0)    food[i]--;
-        food[i] /= 2;
-    }
+    
     
     int count = 1;
     while(count < food.size())
     {
-        for(int i = 0; i < food[count]; i++)
+        for(int i = 0; i < food[count]/2; i++)
             answer += to_string(count);
         
         count++;
@@ -26,7 +22,7 @@ string solution(vector<int> food) {
     int count2 = food.size() - 1;
     while(count2 >= 1)
     {
-        for(int i = 0; i < food[count2]; i++)
+        for(int i = 0; i < food[count2]/2; i++)
             answer += to_string(count2);
         
         count2--;
